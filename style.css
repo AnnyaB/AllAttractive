@@ -297,3 +297,44 @@ body.dark-mode #authModal > div {
     flex-direction: row;
   }
 }
+
+.nav-widgets ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-widgets li {
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background 0.3s;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-widgets li:hover {
+  background: #e6f0ff;
+  transform: translateY(-2px);
+}
+
+.nav-widgets a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  display: block;
+}
+
+/* Optional: Dark mode support */
+body.dark-mode .nav-widgets li {
+  background: #1e1e1e;
+  color: white;
+  border-color: #444;
+}
+
+body.dark-mode .nav-widgets a {
+  color: #fff;
+}
