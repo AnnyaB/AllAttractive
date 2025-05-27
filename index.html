@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cause Of All Causes</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+  body.dark-mode #authModal div {
+    background-color: #111 !important;
+    color: #fff !important;
+  }
+
+  body.dark-mode #authModal input,
+  body.dark-mode #authModal button[type="submit"] {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+  }
+
+  body.dark-mode #authModal input::placeholder {
+    color: #aaa !important;
+  }
+
+  body.dark-mode #closeModal {
+    color: #fff !important;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1 data-tooltip="This website is dedicated to Krishna, the All-Attractive Supreme Personality of Godhead">🌸 The All Attractive</h1>
+    <nav>
+        
+        <div class="auth-buttons">
+    <button id="signUpBtn" data-tooltip="Sign up to access more features">Sign Up</button>
+    <button id="logInBtn" data-tooltip="Log in to access your account">Log In</button>
+    <button id="toggleMode" data-tooltip="Switch between light and dark mode">Toggle Mode</button>
+  </div>
+<!-- Modal Container -->
+<div id="authModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:2000;">
+  <div style="background:#fff; padding:1.5rem; border-radius:8px; width: 320px; position: relative;">
+    <button id="closeModal" style="position:absolute; top:0.5rem; right:0.5rem; font-size:1.2rem; background:none; border:none; cursor:pointer;">&times;</button>
+    <h3 id="modalTitle">Sign Up</h3>
+    <form id="authForm" style="display:flex; flex-direction: column; gap:0.5rem;">
+      <input type="text" id="authName" placeholder="Name" required style="display:none;" />
+      <input type="email" id="authEmail" placeholder="Email" required />
+      <input type="password" id="authPassword" placeholder="Password" required />
+      <button type="submit" style="margin-top:0.5rem;">Submit</button>
+    </form>
+    <p id="authMessage" style="color:red; margin-top:0.5rem;"></p>
+  </div>
+</div>
+
+<!-- Welcome message placeholder -->
+<div id="welcomeMsg" style="display:none; text-align:center; margin:1rem 0; font-weight:bold; color:green;"></div>
+
+      <ul>
+        <li><a href="#lilas" data-tooltip="Explore Krishna's divine pastimes">Lilas</a></li>
+        <li><a href="#sections" data-tooltip="Discover deep spiritual insights">Sections</a></li>
+        <li><a href="#gita" data-tooltip="Read verses from the Bhagavad Gita">Bhagavad Gita</a></li>
+        <li><a href="cosmic-science.html" data-tooltip="Explore Krishna's cosmic science">Cosmic Science</a></li>
+         <li><a href="time-and-space.html">Time and Space</a></li>
+        <li><a href="#subscribe" data-tooltip="Subscribe to receive Krishna Consciousness updates">Subscribe</a></li>
+         <li><a href="foundations.html">Foundations</a></li>
+        <li><a href="vedic-vs-modern.html">Vedic vs Modern Cosmology</a></li>
+        <li><a href="consciousness.html">Consciousness & Science</a></li>
+        <li><a href="evolution-critique.html">Critique of Evolution</a></li>
+        <li><a href="human-purpose.html">Purpose</a></li>
+        <li><a href="extraterrestrials.html">Advanced Civilizations</a></li>
+        <li><a href="modern-physics.html">Physics & Vedas</a></li>
+        <li><a href="scientific-glories.html">Vedic Science Glories</a></li>
+        <li><a href="prabhupada-science.html">Srila Prabhupada on Science</a></li>
+        <li><a href="call-to-action.html">Scientific Bhakti Yoga</a></li>
+         <li><a href="references.html">References</a></li>
+      </ul>
+      
+    </nav>
+    
+  </header>
+
+  <main>
+    <section id="search" style="display: flex; justify-content: center; margin: 2rem 0;">
+  <label for="searchInput" style="position: absolute; left: -9999px;">Search Krishna Lilas</label>
+  <input type="text" id="searchInput" placeholder="Search Krishna Lilas..." data-tooltip="Type keywords to search divine Lilas" />
+</section>
+
+
+    <section id="lilas" class="card-container" data-tooltip="Lilas will appear here dynamically as cards"></section>
+
+   <section id="sections" style="text-align: center;">
+      <h2 data-tooltip="Topics to help you understand Krishna and your eternal identity">Cosmic Science and the Cause</h2>
+      <ul class="topics">
+        <li data-tooltip="The Vedic view of your eternal self">Who are we?</li>
+        <li data-tooltip="The human life is a rare opportunity to return to Krishna">Why is the human form of life a gift from Krishna?</li>
+        <li data-tooltip="Learn how to perfect this human life through bhakti">How to utilize this life?</li>
+        <li data-tooltip="Discover your eternal spiritual nature">Eternal identity and duty</li>
+        <li data-tooltip="Learn from Krishna's pure devotees">Pure devotees of the Lord</li>
+        <li data-tooltip="Understand the importance of accepting a guru">Who is a spiritual master?</li>
+        <li data-tooltip="Explore the Vedic view of the universe and the spiritual world">The cosmic creation & two worlds</li>
+        <li data-tooltip="Find out how to go back to the spiritual world">How to become successful and go back to Godhead</li>
+        <li data-tooltip="Radha-Krishna’s favorite pastimes and devotional offerings">Radha-Krishna’s favorite pastimes & food offerings</li>
+        <li data-tooltip="Scientific theories explained through ancient Vedic wisdom">Scientific theories explained through Vedas</li>
+      </ul>
+    </section>
+
+    <section id="gita" style="text-align: center;">
+      <h2 data-tooltip="The timeless wisdom of the Bhagavad Gita">📖 Bhagavad Gita</h2>
+      <h2 data-tooltip="Timeless guidance from Krishna Himself">📖 What Krsna says in Bhagavad Gita</h2>
+      <p id="gitaMessage" data-tooltip="Verse BG 2.47 - Focus on your duty, not the results">“You have a right to perform your prescribed duty, but you are not entitled to the fruits of action.” — BG 2.47</p>
+    </>
+
+    <!-- Contact Form Centered at Bottom -->
+<section id="subscribe" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 4rem; text-align: center;">
+  <h2 data-tooltip="Connect with Krishna Conscious community">📬 Contact / Subscribe</h2>
+  <form id="contactForm" style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; max-width: 400px;">
+    <label for="nameInput" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); border:0;">Your name</label>
+    <input id="nameInput" type="text" name="name" placeholder="Your name" required data-tooltip="Enter your name" />
+    
+    <label for="emailInput" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); border:0;">Your email</label>
+    <input id="emailInput" type="email" name="email" placeholder="Your email" required data-tooltip="Enter your email" />
+    
+    <label for="messageInput" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); border:0;">Your message or interest</label>
+    <textarea id="messageInput" name="message" placeholder="Your message or interest (e.g. prasadam, kirtan...)" rows="4" data-tooltip="Optional message"></textarea>
+    
+    <button type="submit" data-tooltip="Submit your interest to get updates">Send</button>
+  </form>
+</section>
+
+
+
+
+    
+      <!-- Notification Button at Top-Right -->
+<div id="notificationWrapper" style="position: fixed; top: 1rem; right: 1rem; z-index: 1000;">
+  <button id="notificationBtn" data-tooltip="Click to manage your Krishna Conscious reminders">Notifications</button>
+  <div id="notificationDropdown" style="display: none; background: #fff; border: 1px solid #ccc; padding: 1rem; border-radius: 8px; width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <h4>Select Notifications</h4>
+    <form id="notificationForm">
+      <label><input type="checkbox" id="selectAll" /> <strong>Select All</strong></label><br>
+      <label><input type="checkbox" class="notif-option" name="notifications" value="chanting" /> Chanting 16 rounds</label><br>
+      <label><input type="checkbox" class="notif-option" name="notifications" value="reading" /> Reading Srila Prabhupada's books</label><br>
+      <label><input type="checkbox" class="notif-option" name="notifications" value="sankirtan" /> Nagar Sankirtan</label><br>
+      <label><input type="checkbox" class="notif-option" name="notifications" value="prasadam" /> New prasadam recipes</label><br>
+      <label><input type="checkbox" class="notif-option" name="notifications" value="pastimes" /> Pastimes of Krishna and devotees</label><br>
+      <br>
+      <button type="submit">Save Preferences</button>
+    </form>
+  </div>
+</div>
+
+ 
+  </main>
+
+  <footer>
+    <p data-tooltip="All glories to Sri Guru and Sri Gauranga! Chant Hare Krishna and be happy.">
+  &copy; 2025 Krsna's Corner. All rights reserved.
+</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
