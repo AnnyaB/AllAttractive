@@ -1,0 +1,829 @@
+[ {
+    "title": "The Advent of Lord Kṛṣṇa",
+    "description": "The divine appearance of Lord Krishna in the mortal world to deliver the teachings and protect dharma.",
+    "canto": 10,
+    "chapter": 1,
+    "verses": "1–69",
+    "reference": "Srimad Bhagavatam 10.1.1–69",
+    "image": "images/Advent_of_Lord_Krishna.jpg"
+  },
+  {
+    "title": "Prayers by the Demigods for Lord Kṛṣṇa in the Womb",
+    "description": "The celestial beings offer prayers and blessings for the safe birth of Lord Krishna in Devaki's womb.",
+    "canto": 10,
+    "chapter": 2,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.2.1–40",
+    "image": "images/Prayers_by_Demigods.jpg"
+  },
+  {
+    "title": "The Birth of Lord Kṛṣṇa",
+    "description": "The miraculous birth of Krishna in the prison cell of King Kamsa, heralding the beginning of His divine mission.",
+    "canto": 10,
+    "chapter": 3,
+    "verses": "1–52",
+    "reference": "Srimad Bhagavatam 10.3.1–52",
+    "image": "images/Birth_Of_Lord_Krsna.jpg"
+  },
+  {
+    "title": "Kaṁsa Begins His Persecutions",
+    "description": "King Kamsa, fearing the prophecy of his death, starts persecuting Krishna and His family.",
+    "canto": 10,
+    "chapter": 4,
+    "verses": "1–36",
+    "reference": "Srimad Bhagavatam 10.4.1–36",
+    "image": "images/Kamsa_Persecutions.jpg"
+  },
+  {
+    "title": "Meeting of Nanda and Vasudeva",
+    "description": "The touching reunion of Nanda Maharaja and Vasudeva as they unite for the safety of Krishna.",
+    "canto": 10,
+    "chapter": 5,
+    "verses": "1–23",
+    "reference": "Srimad Bhagavatam 10.5.1–23",
+    "image": "images/Meeting_of_Nanda_and_Vasudeva.jpg"
+  },
+  {
+    "title": "Pūtanā Killed",
+    "description": "Krishna liberates the demoness Putana who came disguised as a mother to kill Him.",
+    "canto": 10,
+    "chapter": 6,
+    "verses": "1–44",
+    "reference": "Srimad Bhagavatam 10.6.1–44",
+    "image": "images/Putana_Vadh_Lila.jpg"
+  },
+  {
+    "title": "The Salvation of Tṛṇāvarta",
+    "description": "Krishna kills the whirlwind demon Trinavarta who tries to carry Him into the sky.",
+    "canto": 10,
+    "chapter": 7,
+    "verses": "1–16",
+    "reference": "Srimad Bhagavatam 10.7.1–16",
+    "image": "images/Trinavarta_Vadh_Lila.jpg"
+  },
+  {
+    "title": "Vision of the Universal Form",
+    "description": "Krishna reveals His cosmic and universal form to His devotees, demonstrating His divine omnipresence.",
+    "canto": 10,
+    "chapter": 8,
+    "verses": "1–55",
+    "reference": "Srimad Bhagavatam 10.8.1–55",
+    "image": "images/Vision_of_the_Universal_Form.jpg"
+  },
+  {
+    "title": "Mother Yaśodā Binds Lord Kṛṣṇa",
+    "description": "Mother Yashoda binds Krishna to a mortar after He steals butter, giving Him the name Damodara.",
+    "canto": 10,
+    "chapter": 9,
+    "verses": "1–21",
+    "reference": "Srimad Bhagavatam 10.9.1–21",
+    "image": "images/Damodar_Leela.jpg"
+  },
+  {
+    "title": "The Deliverance of Nalakūvara and Maṇigrīva",
+    "description": "Krishna frees the sons of Kubera, Nalakuvara and Manigriva, cursed as twin trees.",
+    "canto": 10,
+    "chapter": 10,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.10.1–30",
+    "image": "images/Yamala_Arjuna_Trees_Liberation_Leela.jpg"
+  },
+  {
+    "title": "Vatsasura Vadh",
+    "description": "Krishna kills the calf-demon Vatsasura while grazing cows with His friends.",
+    "canto": 10,
+    "chapter": 11,
+    "verses": "40–42",
+    "reference": "Srimad Bhagavatam 10.11.40–42",
+    "image": "images/Vatsasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Bakasura Vadh",
+    "description": "Krishna kills the crane-demon Bakasura who tried to swallow Him.",
+    "canto": 10,
+    "chapter": 11,
+    "verses": "50–57",
+    "reference": "Srimad Bhagavatam 10.11.50–57",
+    "image": "images/Bakasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Aghasura Vadh",
+    "description": "Krishna kills Aghasura, a giant serpent who tried to swallow Him and His friends.",
+    "canto": 10,
+    "chapter": 12,
+    "verses": "1–39",
+    "reference": "Srimad Bhagavatam 10.12.1–39",
+    "image": "images/Aghasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Brahma Vimohana Lila",
+    "description": "Lord Brahma tests Krishna by stealing the cowherd boys and calves; Krishna expands Himself to replace them.",
+    "canto": 10,
+    "chapter": 13,
+    "verses": "1–64",
+    "reference": "Srimad Bhagavatam 10.13.1–64",
+    "image": "images/Brahma_Vimohan_Leela.jpg"
+  },
+  {
+    "title": "Dhenukasura Vadh",
+    "description": "Balarama and Krishna kill the ass-demon Dhenukasura in the Talavana forest.",
+    "canto": 10,
+    "chapter": 15,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.15.1–40",
+    "image": "images/Dhenukasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Subduing Kaliya",
+    "description": "Krishna subdues the poisonous serpent Kaliya and dances on his hoods.",
+    "canto": 10,
+    "chapter": 16,
+    "verses": "1–64",
+    "reference": "Srimad Bhagavatam 10.16.1–64",
+    "image": "images/Kaliya_Daman_Leela.jpg"
+  },
+  {
+    "title": "Extinguishing the Forest Fire",
+    "description": "Krishna swallows a raging forest fire to save His friends and cows.",
+    "canto": 10,
+    "chapter": 17,
+    "verses": "1–24",
+    "reference": "Srimad Bhagavatam 10.17.1–24",
+    "image": "images/Dava_Agni_Leela.jpg"
+  },
+  {
+    "title": "Pralambasura Vadh",
+    "description": "Balarama kills the demon Pralambasura who disguised himself as a cowherd boy.",
+    "canto": 10,
+    "chapter": 18,
+    "verses": "1–32",
+    "reference": "Srimad Bhagavatam 10.18.1–32",
+    "image": "images/Pralambasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Stealing the Garments of Gopis",
+    "description": "Krishna playfully steals the garments of gopis to teach them complete surrender.",
+    "canto": 10,
+    "chapter": 22,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 10.22.1–28",
+    "image": "images/Gopi_Vastraharan_Leela.jpg"
+  },
+  {
+    "title": "Govardhana Lila",
+    "description": "Krishna lifts the Govardhana Hill for 7 days to protect the Vrajavasis from Indra's wrath.",
+    "canto": 10,
+    "chapter": 24,
+    "verses": "1–45",
+    "reference": "Srimad Bhagavatam 10.24.1–45",
+    "image": "images/Govardhan_Leela.jpg"
+  },
+  {
+    "title": "Nanda Rescued from Varuna",
+    "description": "Krishna rescues Nanda Maharaja from the Varuna planet and reveals His divine form.",
+    "canto": 10,
+    "chapter": 28,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 10.28.1–20",
+    "image": "images/Nanda_Rescued_from_Varuna.jpg"
+  },
+  {
+    "title": "Gopis’ Rasa Dance (Rasa Lila)",
+    "description": "Krishna dances with the gopis in the moonlit forests of Vrindavan in the divine Rasa Lila.",
+    "canto": 10,
+    "chapter": 29,
+    "verses": "1–49",
+    "reference": "Srimad Bhagavatam 10.29.1–49",
+    "image": "images/Gopis_Maharaas_Leela.jpg"
+  },
+  {
+    "title": "Aristasura Vadh",
+    "description": "Krishna kills the bull demon Aristasura who attacks the village.",
+    "canto": 10,
+    "chapter": 36,
+    "verses": "1–18",
+    "reference": "Srimad Bhagavatam 10.36.1–18",
+    "image": "images/Aristasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Keshi Vadh",
+    "description": "Krishna kills the horse demon Keshi sent by Kamsa.",
+    "canto": 10,
+    "chapter": 37,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 10.37.1–20",
+    "image": "images/Keshi_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Vyomasura Vadh",
+    "description": "Krishna kills the thief-demon Vyomasura who disguised himself during their games.",
+    "canto": 10,
+    "chapter": 37,
+    "verses": "21–34",
+    "reference": "Srimad Bhagavatam 10.37.21–34",
+    "image": "images/Vyomasura_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Krishna Enters Mathura",
+    "description": "Krishna and Balarama enter Mathura and enchant the citizens with Their beauty.",
+    "canto": 10,
+    "chapter": 41,
+    "verses": "1–24",
+    "reference": "Srimad Bhagavatam 10.41.1–24",
+    "image": "images/Krsna_Enters_Mathura_Leela.jpg"
+  },
+  {
+    "title": "Breaking the Bow",
+    "description": "Krishna breaks Kamsa's ceremonial bow during the Dhanur-yajna festival.",
+    "canto": 10,
+    "chapter": 42,
+    "verses": "1–38",
+    "reference": "Srimad Bhagavatam 10.42.1–38",
+    "image": "images/Krsna_Breaks_Kamsa's_Bow_Leela.jpg"
+  },
+  {
+    "title": "Killing the Wrestlers",
+    "description": "Krishna and Balarama defeat Chanura and Mushtika in Kamsa’s wrestling arena.",
+    "canto": 10,
+    "chapter": 44,
+    "verses": "1–38",
+    "reference": "Srimad Bhagavatam 10.44.1–38",
+    "image": "images/Krsna_Killing_Chanura_Leela.jpg"
+  },
+  {
+    "title": "Kamsa Vadh",
+    "description": "Krishna jumps on the throne and kills Kamsa, ending his reign of terror.",
+    "canto": 10,
+    "chapter": 44,
+    "verses": "39–51",
+    "reference": "Srimad Bhagavatam 10.44.39–51",
+    "image": "images/Kamsa_Vadh_Leela.jpg"
+  },
+  {
+    "title": "Delivery of the Message of Krishna to the Gopis",
+    "description": "Krishna sends His loving message to the gopis, deepening their spiritual connection and devotion.",
+    "canto": 10,
+    "chapter": 46,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.46.1–35",
+    "image": "images/Uddhava_Visits_Vrndavana.jpg"
+  },
+  {
+    "title": "Krishna's Pastimes in Dvaraka",
+    "description": "After leaving Mathura, Krishna resides in Dvaraka and performs royal pastimes.",
+    "canto": 10,
+    "chapter": 50,
+    "verses": "1–60",
+    "reference": "Srimad Bhagavatam 10.50.1–60",
+    "image": "images/Krsna's_Dwaraka_Leela.jpg"
+  },
+  {
+    "title": "Devouring the Forest Fire",
+    "description": "Krishna consumes the raging forest fire with His divine power, saving the forest and its creatures.",
+    "canto": 10,
+    "chapter": 19,
+    "verses": "1–24",
+    "reference": "Srimad Bhagavatam 10.19.1–24",
+    "image": "images/Devouring_the_Forest_Fire.jpg"
+  },
+  {
+    "title": "Description of Autumn",
+    "description": "A poetic depiction of the serene and beautiful autumn season in Vrindavana.",
+    "canto": 10,
+    "chapter": 20,
+    "verses": "1–15",
+    "reference": "Srimad Bhagavatam 10.20.1–15",
+    "image": "images/Description_of_Autumn.jpg"
+  },
+  {
+    "title": "The Gopis Attracted by the Flute",
+    "description": "The gopis are irresistibly drawn by Krishna's enchanting flute music, expressing their deep love and devotion.",
+    "canto": 10,
+    "chapter": 21,
+    "verses": "1–26",
+    "reference": "Srimad Bhagavatam 10.21.1–26",
+    "image": "images/Gopis_Attracted_by_the_Flute.jpg"
+  },
+  {
+    "title": "Delivering the Wives of the Brahmanas who Performed Sacrifices",
+    "description": "Krishna delivers the wives of the brahmanas who performed yajnas from distress and grants them protection.",
+    "canto": 10,
+    "chapter": 23,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 10.23.1–20",
+    "image": "images/Delivering_Brahmana_Wives.jpg"
+  },
+  {
+    "title": "Devastating Rainfall in Vrindavana",
+    "description": "Heavy rains flood Vrindavana, causing hardship, but Krishna's presence assures protection and hope.",
+    "canto": 10,
+    "chapter": 25,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.25.1–40",
+    "image": "images/Devastating_Rainfall_in_Vrindavana.jpg"
+  },
+  {
+    "title": "Wonderful Krishna",
+    "description": "An elaborate description of Krishna’s divine qualities and miraculous pastimes enchanting all living beings.",
+    "canto": 10,
+    "chapter": 26,
+    "verses": "1–25",
+    "reference": "Srimad Bhagavatam 10.26.1–25",
+    "image": "images/Wonderful_Krishna.jpg"
+  },
+  {
+    "title": "Prayers by Indra, the King of Heaven",
+    "description": "Indra offers prayers and respects to Krishna, acknowledging His supreme power and protection.",
+    "canto": 10,
+    "chapter": 27,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.27.1–30",
+    "image": "images/Prayers_by_Indra.jpg"
+  },
+   {
+    "title": "Prayers Offered by Lord Brahma to Lord Krishna",
+    "description": "Lord Brahma offers humble prayers and praises to Lord Krishna, recognizing His divine glory and protection.",
+    "canto": 10,
+    "chapter": 14,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.14.1–35",
+    "image": "images/Prayers_by_Brahma.jpg"
+  },
+  {
+    "title": "Krishna Hiding from the Gopis",
+    "description": "Krishna playfully hides from the gopis, deepening their love and yearning for Him.",
+    "canto": 10,
+    "chapter": 30,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 10.30.1–20",
+    "image": "images/Krishna_Hiding_from_Gopis.jpg"
+  },
+  {
+    "title": "Songs by the Gopis",
+    "description": "The gopis express their ecstatic love for Krishna through heartfelt songs and prayers.",
+    "canto": 10,
+    "chapter": 31,
+    "verses": "1–25",
+    "reference": "Srimad Bhagavatam 10.31.1–25",
+    "image": "images/Songs_by_Gopis.jpg"
+  },
+  {
+    "title": "Description of the Rasa Dance",
+    "description": "A poetic and vivid description of the divine Rasa dance, where Krishna and the gopis engage in transcendental pastimes.",
+    "canto": 10,
+    "chapter": 32,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.32.1–30",
+    "image": "images/Description_of_Rasa_Dance.jpg"
+  },
+  {
+    "title": "Vidyadhara Liberated and the Demon Sankhasura Killed",
+    "description": "Krishna liberates the vidyadhara and kills the demon Sankhasura, showcasing His divine protection.",
+    "canto": 10,
+    "chapter": 33,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 10.33.1–28",
+    "image": "images/Vidyadhara_Liberated_and_Sankhasura_Killed.jpg"
+  },
+  {
+    "title": "The Gopis' Feelings of Separation",
+    "description": "The gopis express their deep feelings of separation from Krishna, revealing their intense devotional love.",
+    "canto": 10,
+    "chapter": 34,
+    "verses": "1–22",
+    "reference": "Srimad Bhagavatam 10.34.1–22",
+    "image": "images/Gopis_Feelings_of_Separation.jpg"
+  },
+  {
+    "title": "Kamsa Sends Akrura for Krishna",
+    "description": "Kamsa sends Akrura to bring Krishna to Mathura, intending to trap Him for his evil plans.",
+    "canto": 10,
+    "chapter": 35,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.35.1–30",
+    "image": "images/Kamsa_Sends_Akrura.jpg"
+  },
+  {
+    "title": "Akrura's Arrival in Vrindavana",
+    "description": "Akrura arrives in Vrindavana, witnessing Krishna's divine pastimes and glory.",
+    "canto": 10,
+    "chapter": 37,
+    "verses": "1–26",
+    "reference": "Srimad Bhagavatam 10.37.1–26",
+    "image": "images/Akrura_Arrival_in_Vrindavana.jpg"
+  },
+  {
+    "title": "Akrura's Return Journey and His Visiting of Visnuloka Within the Yamuna River",
+    "description": "On his return journey, Akrura visits the transcendental realm of Visnuloka within the Yamuna River, receiving divine visions.",
+    "canto": 10,
+    "chapter": 38,
+    "verses": "1–32",
+    "reference": "Srimad Bhagavatam 10.38.1–32",
+    "image": "images/Akrura_Visnuloka_Yamuna.jpg"
+  },
+  {
+    "title": "Prayers by Akrura",
+    "description": "Akrura offers prayers and praises to Krishna, acknowledging His supreme divinity and blessings.",
+    "canto": 10,
+    "chapter": 39,
+    "verses": "1–18",
+    "reference": "Srimad Bhagavatam 10.39.1–18",
+    "image": "images/Prayers_by_Akrura.jpg"
+  },
+  {
+    "title": "The Killing of the Elephant Kuvalayapida",
+    "description": "Krishna defeats the ferocious elephant Kuvalayapida sent to terrorize Him, displaying His divine strength.",
+    "canto": 10,
+    "chapter": 42,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.42.1–40",
+    "image": "images/Killing_of_Kuvalayapida.jpg"
+  },
+  {
+    "title": "Krishna Recovers the Son of His Teacher",
+    "description": "Krishna courageously rescues the son of His guru, showcasing His compassion and valor.",
+    "canto": 10,
+    "chapter": 44,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.44.1–30",
+    "image": "images/Krishna_Recovers_Son_of_Teacher.jpg"
+  },
+  {
+    "title": "Krishna Pleases His Devotees",
+    "description": "Krishna joyfully engages in pastimes that bring happiness and satisfaction to His devotees.",
+    "canto": 10,
+    "chapter": 47,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.47.1–30",
+    "image": "images/Krishna_Pleases_Devotees.jpg"
+  },
+  {
+    "title": "Ill-motivated Dhritarashtra",
+    "description": "Dhritarashtra acts with improper intentions, highlighting the contrast with Krishna’s divine will.",
+    "canto": 10,
+    "chapter": 48,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 10.48.1–20",
+    "image": "images/Ill_motivated_Dhritarashtra.jpg"
+  },
+  {
+    "title": "Krishna Erects the Dvaraka Fort",
+    "description": "Krishna constructs the magnificent fort of Dvaraka, establishing a secure kingdom for His devotees.",
+    "canto": 10,
+    "chapter": 49,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.49.1–40",
+    "image": "images/Krishna_Dvaraka_Fort.jpg"
+  },
+  {
+    "title": "Deliverance of Mucukunda",
+    "description": "Krishna grants liberation to Mucukunda, freeing him from worldly bondage.",
+    "canto": 10,
+    "chapter": 50,
+    "verses": "1–25",
+    "reference": "Srimad Bhagavatam 10.50.1–25",
+    "image": "images/Deliverance_of_Mucukunda.jpg"
+  },
+  {
+    "title": "Krishna, the Ranchor",
+    "description": "Krishna, known as the 'Ranchor,' manifests His divine power through various heroic feats.",
+    "canto": 10,
+    "chapter": 51,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.51.1–35",
+    "image": "images/Krishna_Ranchor.jpg"
+  },
+  {
+    "title": "Krishna Kidnaps Rukmini",
+    "description": "Krishna rescues and marries Rukmini, overcoming obstacles and fulfilling divine destiny.",
+    "canto": 10,
+    "chapter": 52,
+    "verses": "1–38",
+    "reference": "Srimad Bhagavatam 10.52.1–38",
+    "image": "images/Krishna_Kidnaps_Rukmini.jpg"
+  },
+  {
+    "title": "Krishna Defeats All the Princes and Takes Rukmini Home to Dvaraka",
+    "description": "Krishna triumphs over rival princes and safely brings Rukmini to His kingdom in Dvaraka.",
+    "canto": 10,
+    "chapter": 53,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.53.1–40",
+    "image": "images/Krishna_Takes_Rukmini_to_Dvaraka.jpg"
+  },
+  {
+    "title": "Pradyumna Born to Krishna and Rukmini",
+    "description": "The birth of Pradyumna, son of Krishna and Rukmini, marking a significant event in the divine lineage.",
+    "canto": 10,
+    "chapter": 54,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 10.54.1–28",
+    "image": "images/Pradyumna_Birth.jpg"
+  },
+  {
+    "title": "The Story of the Syamantaka Jewel",
+    "description": "The account of the precious Syamantaka jewel, its theft, and recovery by Krishna.",
+    "canto": 11,
+    "chapter": 1,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 11.1.1–20",
+    "image": "images/Syamantaka_Jewel.jpg"
+  },
+  {
+    "title": "The Killing of Satrajit and Satadhanva",
+    "description": "Krishna confronts and defeats Satrajit and the assassin Satadhanva in defense of justice.",
+    "canto": 11,
+    "chapter": 2,
+    "verses": "1–25",
+    "reference": "Srimad Bhagavatam 11.2.1–25",
+    "image": "images/Killing_of_Satrajit_and_Satadhanva.jpg"
+  },
+  {
+    "title": "Five Queens Married by Krishna",
+    "description": "Krishna marries five queens, establishing significant alliances and expanding His royal family.",
+    "canto": 11,
+    "chapter": 3,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 11.3.1–30",
+    "image": "images/Five_Queens_Married_by_Krishna.jpg"
+  },
+  {
+    "title": "Deliverance of the Demon Bhaumasura",
+    "description": "Krishna liberates the demon Bhaumasura, showcasing His power and mercy.",
+    "canto": 11,
+    "chapter": 4,
+    "verses": "1–22",
+    "reference": "Srimad Bhagavatam 11.4.1–22",
+    "image": "images/Deliverance_of_Bhaumasura.jpg"
+  },
+  {
+    "title": "Talks Between Krishna and Rukmi",
+    "description": "Dialogues between Krishna and Rukmi revealing their differing perspectives and divine will.",
+    "canto": 11,
+    "chapter": 5,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 11.5.1–28",
+    "image": "images/Talks_Krishna_Rukmi.jpg"
+  },
+  {
+    "title": "The Genealogical Table of the Family of Krishna",
+    "description": "A detailed genealogy of Krishna’s family, tracing divine and royal lineages.",
+    "canto": 11,
+    "chapter": 6,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 11.6.1–35",
+    "image": "images/Genealogical_Table_Krishna_Family.jpg"
+  },
+  {
+    "title": "The Meeting of Usa and Aniruddha",
+    "description": "The romantic and dramatic encounter of Usa and Aniruddha, Krishna’s grandson.",
+    "canto": 11,
+    "chapter": 7,
+    "verses": "1–25",
+    "reference": "Srimad Bhagavatam 11.7.1–25",
+    "image": "images/Meeting_Usa_Aniruddha.jpg"
+  },
+  {
+    "title": "Lord Krishna Fights with Banasura",
+    "description": "Krishna battles the powerful demon king Banasura to protect His devotees and uphold dharma.",
+    "canto": 11,
+    "chapter": 8,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 11.8.1–40",
+    "image": "images/Krishna_Fights_Banasura.jpg"
+  },
+  {
+    "title": "The Story of King Nrga",
+    "description": "The tale of King Nrga, illustrating divine justice and Krishna’s guidance.",
+    "canto": 11,
+    "chapter": 9,
+    "verses": "1–22",
+    "reference": "Srimad Bhagavatam 11.9.1–22",
+    "image": "images/Story_of_King_Nrga.jpg"
+  },
+  {
+    "title": "Lord Balarama Visits Vrndavana",
+    "description": "Balarama’s visit to Vrndavana, witnessing Krishna’s pastimes and reminiscing their childhood.",
+    "canto": 11,
+    "chapter": 10,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 11.10.1–28",
+    "image": "images/Balarama_Visits_Vrndavana.jpg"
+  },
+  {
+    "title": "Deliverance of Paundraka and the King of Kasi",
+    "description": "Krishna defeats Paundraka and the King of Kasi, establishing His supremacy.",
+    "canto": 11,
+    "chapter": 11,
+    "verses": "1–33",
+    "reference": "Srimad Bhagavatam 11.11.1–33",
+    "image": "images/Deliverance_of_Paundraka_King_of_Kasi.jpg"
+  },
+  {
+    "title": "Deliverance of Dvivida Gorilla",
+    "description": "Krishna liberates the demon Dvivida, ending his tyranny.",
+    "canto": 11,
+    "chapter": 12,
+    "verses": "1–20",
+    "reference": "Srimad Bhagavatam 11.12.1–20",
+    "image": "images/Deliverance_of_Dvivida.jpg"
+  },
+  {
+    "title": "The Marriage of Samba",
+    "description": "The auspicious marriage of Krishna’s son Samba, marking a joyous occasion.",
+    "canto": 11,
+    "chapter": 13,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 11.13.1–30",
+    "image": "images/Marriage_of_Samba.jpg"
+  },
+  {
+    "title": "The Great Sage Narada Visits the Different Homes of Lord Krishna",
+    "description": "Narada Muni visits various homes of Lord Krishna, witnessing His divine pastimes and blessings.",
+    "canto": 10,
+    "chapter": 14,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.14.1–35",
+    "image": "images/Narada_Visits_Krishna_Homes.jpg"
+  },
+  {
+    "title": "Lord Krishna's Daily Activities",
+    "description": "A detailed description of Krishna's routine activities and divine pastimes throughout the day.",
+    "canto": 10,
+    "chapter": 15,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.15.1–40",
+    "image": "images/Krishna_Daily_Activities.jpg"
+  },
+  {
+    "title": "Lord Krishna in Indraprastha City",
+    "description": "Krishna's presence and activities in the city of Indraprastha during the Mahabharata era.",
+    "canto": 10,
+    "chapter": 16,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 10.16.1–28",
+    "image": "images/Krishna_in_Indraprastha.jpg"
+  },
+  {
+    "title": "Liberation of King Jarasandha",
+    "description": "Krishna's role in the liberation and defeat of the powerful King Jarasandha.",
+    "canto": 10,
+    "chapter": 17,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.17.1–30",
+    "image": "images/Liberation_of_Jarasandha.jpg"
+  },
+  {
+    "title": "Lord Krishna Returns to the City of Hastinapura",
+    "description": "Krishna's return to Hastinapura, marking significant events during the Mahabharata period.",
+    "canto": 10,
+    "chapter": 18,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.18.1–35",
+    "image": "images/Krishna_Returns_Hastinapura.jpg"
+  },
+  {
+    "title": "The Deliverance of Sisupala",
+    "description": "Krishna delivers Sisupala from his offenses, demonstrating divine justice and mercy.",
+    "canto": 10,
+    "chapter": 19,
+    "verses": "1–32",
+    "reference": "Srimad Bhagavatam 10.19.1–32",
+    "image": "images/Deliverance_of_Sisupala.jpg"
+  },
+  {
+    "title": "Why Duryodhana Felt Insulted at the End of the Rajasuya Sacrifice",
+    "description": "Analysis of the reasons behind Duryodhana's insult and anger following the Rajasuya sacrifice.",
+    "canto": 10,
+    "chapter": 20,
+    "verses": "1–29",
+    "reference": "Srimad Bhagavatam 10.20.1–29",
+    "image": "images/Duryodhana_Insult_Rajasuya.jpg"
+  },
+  {
+    "title": "The Battle Between Salva and the Yadu Dynasty",
+    "description": "A fierce battle unfolds between Salva and the Yadu dynasty, showcasing Krishna’s strategic prowess and protection of his clan.",
+    "canto": 10,
+    "chapter": 21,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.21.1–30",
+    "image": "images/Battle_Salva_Yadu.jpg"
+  },
+  {
+    "title": "The Killing of Dantavakra, Viduratha and Romahari",
+    "description": "Krishna defeats the demons Dantavakra, Viduratha, and Romahari, protecting dharma and the devotees.",
+    "canto": 10,
+    "chapter": 23,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 10.23.1–28",
+    "image": "images/Killing_Dantavakra_Viduratha_Romahari.jpg"
+  },
+  {
+    "title": "The Liberation of Balvala, and Lord Balarama's Touring the Sacred Places",
+    "description": "Balvala is liberated, and Lord Balarama tours various sacred places, manifesting his divine presence.",
+    "canto": 10,
+    "chapter": 24,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.24.1–35",
+    "image": "images/Balarama_Touring_Sacred_Places.jpg"
+  },
+  {
+    "title": "Meeting of Lord Krishna with Sudama Brahmana",
+    "description": "A heartwarming meeting between Lord Krishna and his childhood friend Sudama, exemplifying devotion and humility.",
+    "canto": 10,
+    "chapter": 25,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.25.1–30",
+    "image": "images/Krishna_Meets_Sudama.jpg"
+  },
+  {
+    "title": "The Brahmana Sudama Benedicted by Lord Krishna",
+    "description": "Lord Krishna blesses Sudama with divine benedictions, showing the power of friendship and devotion.",
+    "canto": 10,
+    "chapter": 26,
+    "verses": "1–26",
+    "reference": "Srimad Bhagavatam 10.26.1–26",
+    "image": "images/Sudama_Benediction.jpg"
+  },
+  {
+    "title": "Lord Krishna and Balarama Meet the Inhabitants of Vrndavana",
+    "description": "Lord Krishna and Balarama meet and interact with the inhabitants of Vrndavana, strengthening their divine relationships.",
+    "canto": 10,
+    "chapter": 27,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.27.1–40",
+    "image": "images/Krishna_Balarama_Vrndavana.jpg"
+  },
+  {
+    "title": "Draupadi Meets the Queens of Krishna",
+    "description": "Draupadi meets the queens of Krishna, marking a significant moment of unity and friendship.",
+    "canto": 10,
+    "chapter": 28,
+    "verses": "1–32",
+    "reference": "Srimad Bhagavatam 10.28.1–32",
+    "image": "images/Draupadi_Meets_Queens.jpg"
+  },
+  {
+    "title": "Sacrificial Ceremonies Performed by Vasudeva",
+    "description": "Vasudeva performs various sacrificial ceremonies, invoking divine blessings and auspiciousness.",
+    "canto": 10,
+    "chapter": 29,
+    "verses": "1–35",
+    "reference": "Srimad Bhagavatam 10.29.1–35",
+    "image": "images/Vasudeva_Sacrificial_Ceremonies.jpg"
+  },
+  {
+    "title": "Spiritual Instruction for Vasudeva and Return of the Six Dead Sons of Devaki by Lord Krishna",
+    "description": "Krishna imparts spiritual instruction to Vasudeva and returns the six sons of Devaki, who had passed away.",
+    "canto": 10,
+    "chapter": 30,
+    "verses": "1–40",
+    "reference": "Srimad Bhagavatam 10.30.1–40",
+    "image": "images/Krishna_Instructs_Vasudeva.jpg"
+  },
+  {
+    "title": "The Kidnapping of Subhadra and Lord Krishna's Visiting Srutadeva and Bahulasva",
+    "description": "The story of Subhadra’s kidnapping and Krishna’s visit to Srutadeva and Bahulasva unfolds with divine intervention.",
+    "canto": 10,
+    "chapter": 31,
+    "verses": "1–38",
+    "reference": "Srimad Bhagavatam 10.31.1–38",
+    "image": "images/Subhadra_Kidnapping_Krishna_Visit.jpg"
+  },
+  {
+    "title": "Prayers by the Personified Vedas",
+    "description": "The Vedas, personified, offer prayers and praises to Lord Krishna for his supreme glories.",
+    "canto": 10,
+    "chapter": 32,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.32.1–30",
+    "image": "images/Vedas_Prayers_Krishna.jpg"
+  },
+  {
+    "title": "Deliverance of Lord Siva",
+    "description": "Lord Shiva is delivered from distress by the grace and mercy of Lord Krishna.",
+    "canto": 10,
+    "chapter": 33,
+    "verses": "1–36",
+    "reference": "Srimad Bhagavatam 10.33.1–36",
+    "image": "images/Deliverance_of_Siva.jpg"
+  },
+  {
+    "title": "The Superexcellent Power of Krishna",
+    "description": "A narration of Krishna’s supreme and superexcellent divine power, demonstrating his transcendence.",
+    "canto": 10,
+    "chapter": 34,
+    "verses": "1–34",
+    "reference": "Srimad Bhagavatam 10.34.1–34",
+    "image": "images/Superexcellent_Power_Krishna.jpg"
+  },
+  {
+    "title": "Summary Description of Lord Krishna's Pastimes",
+    "description": "A concise summary of the glorious pastimes of Lord Krishna, encompassing his divine activities and teachings.",
+    "canto": 10,
+    "chapter": 35,
+    "verses": "1–38",
+    "reference": "Srimad Bhagavatam 10.35.1–38",
+    "image": "images/Summary_Pastimes_Krishna.jpg"
+  }
+]

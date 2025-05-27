@@ -1,0 +1,299 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  transition: background 0.3s, color 0.3s;
+}
+header {
+  background: #efe3d0;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+input, button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+.dark-mode .card {
+  background: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-mode header h1 {
+  color: #000;
+}
+
+/* Tooltip base style */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+/* Tooltip box */
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%; /* position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+/* Tooltip arrow */
+[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Show tooltip on hover/focus */
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before,
+[data-tooltip]:focus::after,
+[data-tooltip]:focus::before {
+  opacity: 1;
+}
+
+/* Dark mode tooltip support */
+.dark-mode [data-tooltip]::after {
+  background-color: #eee;
+  color: #111;
+}
+
+.dark-mode [data-tooltip]::before {
+  border-color: #eee transparent transparent transparent;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+/* Assuming you add a 'dark-mode' class on <body> when dark mode is ON */
+body.dark-mode #notificationDropdown {
+  background-color: #000 !important; /* Black background */
+  color: #fff !important;            /* White text */
+  border-color: #444 !important;     /* Darker border */
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1) !important; /* subtle light shadow */
+}
+
+/* Ensure checkboxes and labels also adapt */
+body.dark-mode #notificationDropdown label {
+  color: #fff !important;
+}
+
+body.dark-mode #notificationDropdown input[type="checkbox"] {
+  filter: invert(1); /* Invert checkbox colors for visibility on dark */
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center horizontally */
+  justify-content: center;  /* Center vertically */
+  gap: 1rem;                /* Space between elements */
+  text-align: center;       /* Center text inside child elements */
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem; /* space between Sign Up and Log In */
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; /* optional spacing from top */
+  text-align: center;
+}
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.97);
+  background-color: #004a99;
+}
+
+/* Keyboard focus */
+button:focus {
+  outline: 2px solid #80bdff;
+  outline-offset: 2px;
+}
+/* Default (light mode) */
+#closeModal {
+  color: black;
+}
+
+/* Dark mode fixes */
+body.dark-mode #closeModal {
+  color: white;
+}
+
+/* Fix auth buttons (Sign Up / Log In) text color in dark mode */
+body.dark-mode .auth-buttons button {
+  color: white;
+}
+
+/* Optional: Darken modal background for contrast in dark mode */
+body.dark-mode #authModal > div {
+  background: #222;
+  color: white;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Small devices: phones (< 600px) */
+@media (max-width: 599px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+
+  button, input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Medium devices: tablets (600px–899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  button, input {
+    font-size: 1rem;
+  }
+
+  .auth-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large devices: desktops (≥ 900px) */
+@media (min-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .auth-buttons {
+    flex-direction: row;
+  }
+}
