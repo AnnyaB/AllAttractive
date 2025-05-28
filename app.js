@@ -253,3 +253,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const verses = document.querySelectorAll(".gita-verse");
+  verses.forEach((verse, index) => {
+    setTimeout(() => {
+      verse.classList.add("visible");
+    }, index * 2500); // 2.5 seconds between each verse
+  });
+});
