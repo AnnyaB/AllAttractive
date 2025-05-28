@@ -220,5 +220,19 @@
   </footer>
 
   <script src="app.js"></script>
+  <button id="backToTop" title="Go to top" aria-label="Back to top">↑</button>
+<script>
+  // Show button on scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+  };
+
+  // Scroll to top on click
+  document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
 </body>
 </html>

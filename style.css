@@ -397,3 +397,29 @@ body.dark-mode .nav-widgets a {
   opacity: 1;
   transform: translateY(0);
 }
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 100;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #222;
+}
+
+body.dark-mode #backToTop {
+  background-color: #eee;
+  color: #111;
+}
