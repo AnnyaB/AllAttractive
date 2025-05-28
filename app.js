@@ -261,3 +261,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }, index * 2500); // 2.5 seconds between each verse
   });
 });
+document
