@@ -423,3 +423,20 @@ body.dark-mode #backToTop {
   background-color: #eee;
   color: #111;
 }
+@media (max-width: 768px) {
+  form {
+    padding-bottom: 80px; /* Adjust based on height of your Back to Top button */
+  }
+}
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
