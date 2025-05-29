@@ -440,3 +440,29 @@ body.dark-mode #backToTop {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.bubble-card {
+  background: linear-gradient(135deg, #94bbe9, #d6a4ec);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bubble-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.25);
+}
+
+.widget-card {
+  text-decoration: none;
+}
