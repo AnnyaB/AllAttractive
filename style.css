@@ -466,3 +466,157 @@ body.dark-mode #backToTop {
 .widget-card {
   text-decoration: none;
 }
+
+.cosmic-structure {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.cosmic-structure h2 {
+  text-align: center;
+  color: #004085;
+  margin-bottom: 20px;
+}
+
+.cosmic-points {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.cosmic-points ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin-top: 5px;
+}
+
+blockquote {
+  margin-top: 30px;
+  font-style: italic;
+  color: #333;
+  border-left: 4px solid #004085;
+  padding-left: 15px;
+}
+
+.consciousness-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #1c1c1c;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.consciousness-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.consciousness-points {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.consciousness-points ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin-top: 5px;
+}
+
+blockquote {
+  margin-top: 30px;
+  font-style: italic;
+  color: #333;
+  border-left: 4px solid #003366;
+  padding-left: 15px;
+}
+
+.philosophy-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.07);
+}
+
+.philosophy-section h2 {
+  text-align: center;
+  color: #002244;
+  margin-bottom: 20px;
+}
+
+.philosophy-points {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.philosophy-points ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-top: 5px;
+}
+
+blockquote {
+  margin-top: 30px;
+  font-style: italic;
+  color: #333333;
+  border-left: 4px solid #002244;
+  padding-left: 15px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.origin-of-life-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.origin-of-life-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.origin-points {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.origin-points ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-top: 5px;
+}
+
+.origin-of-life-section blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #333333;
+  border-left: 4px solid #003366;
+  padding-left: 15px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
