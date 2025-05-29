@@ -1,3 +1,5 @@
+console.log("Gaur Lila JS loaded");
+// Ensure the DOM is fully loaded before running scripts
 document.addEventListener('DOMContentLoaded', () => {
   const lilasContainer = document.getElementById('lilas');
   const searchInput = document.getElementById('searchInput');
@@ -262,3 +264,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document
+
+
