@@ -620,3 +620,76 @@ blockquote {
   border-radius: 6px;
 }
 
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Accordion styling */
+.accordion {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.accordion-btn {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.accordion-btn:hover {
+  background-color: #ccc;
+}
+
+.accordion-panel {
+  padding: 0 1rem;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+/* === Responsive Enhancements for Mobile === */
+
+@media (max-width: 600px) {
+  /* Improve padding and layout on small screens */
+  .accordion {
+    padding: 0 1rem;
+    margin: 1rem auto;
+  }
+
+  .accordion-btn {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    line-height: 1.4;
+  }
+
+  .accordion-panel {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Optional: reduce animation distance for mobile */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Make sure sections are padded properly */
+  section {
+    padding: 1rem;
+  }
+}
