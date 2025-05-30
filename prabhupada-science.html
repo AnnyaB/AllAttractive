@@ -6,6 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Srila Prabhupada on Science</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    .accordion-panel {
+      padding: 0 1rem;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
+      border: 1px solid #ddd;
+      opacity: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .accordion-panel.open {
+      opacity: 1;
+      max-height: 500px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .accordion-btn {
+      cursor: pointer;
+      padding: 1rem;
+      border: none;
+      background: #f0f0f0;
+      width: 100%;
+      text-align: left;
+      font-weight: bold;
+      border-top: 1px solid #ccc;
+    }
+
+
+  /* DARK MODE FIX */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  body.dark-mode .accordion-panel {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #555;
+  }
+
+  body.dark-mode .accordion-btn {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-top: 1px solid #444;
+  }
+
+  body.dark-mode header,
+  body.dark-mode nav a,
+  body.dark-mode footer {
+    color: #ffffff;
+    background-color: #1a1a1a;
+  }
+
+  body.dark-mode h1 {
+  color: white;
+}
+  </style>
 </head>
 <body>
   <header>
@@ -92,6 +153,27 @@
         </div>
       </div>
     </section>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".accordion-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      const panel = button.nextElementSibling;
+
+      document.querySelectorAll(".accordion-panel").forEach(p => {
+        if (p !== panel) {
+          p.classList.remove("open");
+        }
+      });
+
+      panel.classList.toggle("open");
+    });
+  });
+});
+
+</script>
+
+    
   </main>
 
   <footer style="text-align: center; margin-top: 3rem;">
