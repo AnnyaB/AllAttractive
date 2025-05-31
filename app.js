@@ -266,4 +266,13 @@ document.addEventListener("DOMContentLoaded", function () {
 document
 
 
+const widget = document.getElementById('bubblyWidget');
+
+widget.addEventListener('click', () => {
+  widget.classList.add('glow');
+  setTimeout(() => {
+    widget.classList.remove('glow');
+  }, 500);
+  alert('You clicked to meet The Beautiful Lord!');
+});
 

@@ -731,3 +731,68 @@ blockquote {
     opacity: 0;
   }
 }
+
+
+header {
+  position: relative;
+  padding-top: 80px; /* space to make room for the widget */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+#bubblyWidget {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-image: url('my_art_pray.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1000;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+#bubblyWidget.glow {
+  box-shadow: 0 0 10px 5px gold;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  #bubblyWidget {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #bubblyWidget {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {  /* For iPad */
+  #bubblyWidget {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {  /* For mobile */
+  #bubblyWidget {
+    width: 40px;
+    height: 40px;
+  }
+}
