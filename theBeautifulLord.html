@@ -10,33 +10,107 @@
       color: white;
       font-family: 'Georgia', serif;
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 4rem 1rem;
+      margin: 0;
+      overflow-x: hidden; /* prevent horizontal scroll */
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       animation: fadeInDown 2s ease-out;
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       max-width: 600px;
       margin: 0 auto 2rem;
       animation: fadeInUp 2s ease-out 0.5s;
       animation-fill-mode: both;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+
+    /* Container for images */
+    .image-slider {
+      position: relative;
+      width: 350px;
+      max-width: 90vw;
+      height: 350px;
+      margin: 2rem auto 0;
+      overflow: visible;
+      perspective: 1000px;
     }
 
     .krishna-image {
-      width: 300px;
-      max-width: 80%;
+      position: absolute;
+      width: 100%;
+      max-width: 350px;
       border-radius: 20px;
       box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.2);
-      animation: glow 3s ease-in-out infinite alternate, fadeZoomIn 2s ease-out;
-      margin-top: 2rem;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      transform-style: preserve-3d;
+      transition: box-shadow 0.3s ease;
     }
 
-    /* Keyframes for animations */
+    /* Animations for 3 images cycling through positions */
+    /* Image 1 */
+    .image1 {
+      animation: slide3Images 18s infinite;
+      animation-delay: 0s;
+      z-index: 2;
+    }
+
+    /* Image 2 */
+    .image2 {
+      animation: slide3Images 18s infinite;
+      animation-delay: 6s;
+      z-index: 1;
+    }
+
+    /* Image 3 */
+    .image3 {
+      animation: slide3Images 18s infinite;
+      animation-delay: 12s;
+      z-index: 0;
+    }
+
+    /* Keyframe for 3-image slider:
+      - 0%   Image in center, opacity 1, scale 1.1, top z-index
+      - 33%  Slide to right, opacity 0.5, scale 0.9, z-index lower
+      - 66%  Offscreen left, invisible
+      - 99%  Slide from left to center, opacity 1, scale 1.1, z-index top
+    */
+    @keyframes slide3Images {
+      0% {
+        transform: translateX(0) scale(1.1);
+        opacity: 1;
+        z-index: 3;
+        box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.6);
+      }
+      30% {
+        transform: translateX(120%) scale(0.9);
+        opacity: 0.5;
+        z-index: 2;
+        box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.3);
+      }
+      65% {
+        transform: translateX(-120%) scale(0.8);
+        opacity: 0;
+        z-index: 1;
+        box-shadow: none;
+      }
+      99% {
+        transform: translateX(0) scale(1.1);
+        opacity: 1;
+        z-index: 3;
+        box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    /* Animations */
     @keyframes fadeInDown {
       from {
         opacity: 0;
@@ -59,26 +133,7 @@
       }
     }
 
-    @keyframes fadeZoomIn {
-      from {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    @keyframes glow {
-      from {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.1);
-      }
-      to {
-        box-shadow: 0 0 40px 15px rgba(255, 255, 255, 0.4);
-      }
-    }
-
+    /* 🌐 Mobile Responsiveness */
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -89,9 +144,20 @@
         padding: 0 0.5rem;
       }
 
+      .image-slider {
+        width: 95vw;
+        height: auto;
+      }
+
       .krishna-image {
-        width: 95%;
-        max-width: 300px;
+        position: relative !important;
+        transform: none !important;
+        animation: none !important;
+        opacity: 1 !important;
+        margin: 1rem auto;
+        box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.3);
+        max-width: 100%;
+        width: 90vw;
       }
     }
   </style>
@@ -102,8 +168,22 @@
     Welcome to the divine realm of the most Beautiful Lord – Śrī Kṛṣṇa, the all-attractive Supreme Personality of Godhead. May your consciousness be forever drawn to His lotus feet.
   </p>
 
-  
-  <img class="krishna-image" src="theBeautifulLord.jpg" alt="Lord Shri Krishna" />
-
+  <div class="image-slider">
+    <img
+      class="krishna-image image1"
+      src="theBeautifulLord.jpg"
+      alt="Lord Shri Krishna 1"
+    />
+    <img
+      class="krishna-image image2"
+      src="theBeautifulRadhikaRaman.jpg"
+      alt="Lord Shri Krishna 2"
+    />
+    <img
+      class="krishna-image image3"
+      src="theBeautifulArjunSakha.jpg"
+      alt="Lord Shri Krishna 3"
+    />
+  </div>
 </body>
 </html>
