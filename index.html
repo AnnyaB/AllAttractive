@@ -25,10 +25,19 @@
   body.dark-mode #closeModal {
     color: #fff !important;
   }
+
+
 </style>
+
+
 
 </head>
 <body>
+
+  <div id="bubblyWidget" title="Click to meet The Beautiful Lord">
+  
+</div>
+
   <header>
     <h1 data-tooltip="This website is dedicated to Krishna, the All-Attractive Supreme Personality of Godhead">The All Attractive</h1>
     <nav>
@@ -257,7 +266,20 @@
   document.getElementById("backToTop").addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
 </script>
+
+<script>
+  document.getElementById('bubblyWidget').addEventListener('click', function () {
+    const widget = this;
+    widget.classList.add('bubbly-animate');
+
+    setTimeout(() => {
+      window.location.href = "theBeautifulLord.html";
+    }, 1000); // Match the animation duration
+  });
+</script>
+
 
 </body>
 </html>

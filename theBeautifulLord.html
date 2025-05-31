@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Beautiful Lord</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #d4a1f3, #5c2d91);
+      color: white;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 2s ease-out;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      animation: fadeInUp 2s ease-out 0.5s;
+      animation-fill-mode: both;
+    }
+
+    .krishna-image {
+      width: 300px;
+      max-width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.2);
+      animation: glow 3s ease-in-out infinite alternate, fadeZoomIn 2s ease-out;
+      margin-top: 2rem;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeZoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.1);
+      }
+      to {
+        box-shadow: 0 0 40px 15px rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      .krishna-image {
+        width: 95%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Śrī Kṛṣṇa – The Beautiful Lord</h1>
+  <p>
+    Welcome to the divine realm of the most Beautiful Lord – Śrī Kṛṣṇa, the all-attractive Supreme Personality of Godhead. May your consciousness be forever drawn to His lotus feet.
+  </p>
+
+  
+  <img class="krishna-image" src="theBeautifulLord.jpg" alt="Lord Shri Krishna" />
+
+</body>
+</html>

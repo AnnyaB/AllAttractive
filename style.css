@@ -693,3 +693,41 @@ blockquote {
     padding: 1rem;
   }
 }
+
+#bubblyWidget {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 30%, #8be9fd, #50fa7b);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #50fa7b, 0 0 20px #8be9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: all 0.6s ease-in-out;
+}
+
+#bubblyWidget.bubbly-animate {
+  animation: bubbleExpand 1s ease forwards;
+}
+
+@keyframes bubbleExpand {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(-50%) scale(30);
+    opacity: 0;
+  }
+}
