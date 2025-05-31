@@ -133,32 +133,34 @@
       }
     }
 
-    /* 🌐 Mobile Responsiveness */
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
+  h1 {
+    font-size: 2rem;
+  }
 
-      p {
-        font-size: 1rem;
-        padding: 0 0.5rem;
-      }
+  p {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
 
-      .image-slider {
-        width: 95vw;
-        height: auto;
-      }
+  .image-slider {
+    width: 95vw;
+    height: 350px; /* keep fixed height to preserve animation */
+  }
 
-      .krishna-image {
-        position: relative !important;
-        transform: none !important;
-        animation: none !important;
-        opacity: 1 !important;
-        margin: 1rem auto;
-        box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.3);
-        max-width: 100%;
-        width: 90vw;
-      }
+  .krishna-image {
+    max-width: 90vw;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.5; /* animation controls opacity */
+    box-shadow: 0 0 30px 8px rgba(255, 255, 255, 0.3);
+    /* Keep position absolute and animation */
+    position: absolute !important;
+    animation-play-state: running !important;
+    animation-timing-function: ease-in-out !important;
+  }
+
+
     }
   </style>
 </head>
