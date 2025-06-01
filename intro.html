@@ -274,15 +274,6 @@ body.dark-mode .bubble-container .card h2 {
   margin-top: 20px;
 }
 
-body.dark-mode ::selection {
-  background: yellow !important;
-  color: black !important;
-}
-
-#highlight-area {
-  color: black !important;
-}
-
 
   </style>
 </head>
@@ -295,18 +286,6 @@ body.dark-mode ::selection {
       <a href="time-and-space.html">Next Page</a>
       <button id="toggleMode"> Toggle Dark Mode</button>
     </nav>
-
-   <div style="margin: 20px 0;">
-  <button id="highlight-btn">
-    Highlight Selection
-    <span class="tooltip">Highlight the selected text</span>
-  </button>
-</div>
-
-<p id="highlight-area">
-Select any part of this text and click "Highlight Selection".
-</p>
-
   </header>
 
   <!-- ✅ Green tick shown at top -->
@@ -495,27 +474,6 @@ Select any part of this text and click "Highlight Selection".
     instructions.innerHTML = instructions.innerHTML.replace(/upward/g, '<strong>upward</strong>');
   }
 </script>
-
-<script>
-document.getElementById('highlight-btn').addEventListener('click', function () {
-  const selection = window.getSelection();
-  if (!selection || selection.isCollapsed) {
-    alert('Please select some text to highlight.');
-    return;
-  }
-
-  const range = selection.getRangeAt(0);
-  const span = document.createElement('span');
-  span.style.backgroundColor = 'yellow';
-  span.textContent = selection.toString();
-
-  range.deleteContents();
-  range.insertNode(span);
-  selection.removeAllRanges(); // Clear selection
-});
-</script>
-
-
   <script src="app.js"></script>
 </body>
 </html>
