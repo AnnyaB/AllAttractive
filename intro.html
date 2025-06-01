@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spiritual Timeline</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background-color: #8ecae6;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    .bubble-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+    }
+
+    .bubble {
+      background: #ffffff;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
+
+    .bubble:hover {
+      transform: scale(1.1);
+    }
+
+    .bubble img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .card {
+      display: none;
+      position: absolute;
+      left: 110px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 15px;
+      min-width: 250px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      animation: slideIn 0.4s ease forwards;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #023047;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        left: 100px;
+        min-width: 180px;
+      }
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to top, #219ebc, #ffffff);
+      transform: translateX(-50%);
+      z-index: 0;
+      animation: growLine 4s ease-in-out forwards;
+    }
+
+    @keyframes growLine {
+      from { height: 0%; }
+      to { height: 100%; }
+    }
+
+    .instructions {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      background: #ffffff;
+      border: 2px dashed #8ecae6;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+      text-align: center;
+      max-width: 320px;
+      color: #023047;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tick-container {
+      position: relative;
+      margin-bottom: 20px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    .tick {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #06d6a0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tick::after {
+      content: '✔';
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.5); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .step-tick {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #06d6a0;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff6b6b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: slideInWarn 0.5s ease forwards;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+@keyframes slideInWarn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #06d6a0;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 999;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .timeline {
+    width: 100%;
+  }
+  .bubble-container {
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
+  }
+  .bubble {
+    width: 60px;
+    height: 60px;
+  }
+  .bubble img {
+    object-fit: cover;
+  }
+  .card {
+    position: static !important;
+    left: auto !important;
+    min-width: 90vw !important;
+    max-width: 90vw !important;
+    margin-top: 10px;
+    box-shadow: none !important;
+  }
+  .timeline::before, .timeline::after {
+    left: 20px;
+    transform: none;
+    height: auto;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Green tick shown at top -->
+  <div class="tick-container" id="tick">
+    <div class="tick"></div>
+  </div>
+
+  <section class="timeline" id="timeline">
+
+   <div class="bubble-container">
+  <div class="bubble" onclick="toggleCard(0)">
+    <img src="who_are_we.jpg" alt="Who are we?">
+    <div class="step-tick" id="step-tick-0">✔</div>
+  </div>
+  <div class="card" id="card-0">
+    <h2>Who are we?</h2>
+    <p>We are eternal spirit souls, not this body...</p>
+  </div>
+</div>
+
+
+    <div class="bubble-container">
+      <div class="bubble" onclick="toggleCard(1)">
+        <img src="aim_of_life_and_why_it's_important.jpg" alt="Aim of life?">
+        <div class="step-tick" id="step-tick-1">✔</div>
+      </div>
+      <div class="card" id="card-1">
+        <h2>What is the aim of life and why is it important?</h2>
+        <p>To revive our eternal relationship with Krishna. This gives true satisfaction, beyond temporary goals.</p>
+      </div>
+    </div>
+
+    <div class="bubble-container">
+      <div class="bubble" onclick="toggleCard(2)">
+        <img src="what_we_should_do.jpg" alt="What to do?">
+        <div class="step-tick" id="step-tick-2">✔</div>
+      </div>
+      <div class="card" id="card-2">
+        <h2>What should we do?</h2>
+        <p>Engage in bhakti-yoga—chanting, hearing, serving Krishna—and follow the teachings of Bhagavad Gita.</p>
+      </div>
+    </div>
+
+    <div class="bubble-container">
+      <div class="bubble" onclick="toggleCard(3)">
+        <img src="why_to_do.jpg" alt="Why to do?">
+        <div class="step-tick" id="step-tick-3">✔</div>
+      </div>
+      <div class="card" id="card-3">
+        <h2>Why to do?</h2>
+        <p>Devotional service purifies our consciousness and frees us from the cycle of birth and death (samsara).</p>
+      </div>
+    </div>
+
+    <div class="bubble-container">
+      <div class="bubble" onclick="toggleCard(4)">
+        <img src="how_to_do.jpg" alt="How to do?">
+        <div class="step-tick" id="step-tick-4">✔</div>
+      </div>
+      <div class="card" id="card-4">
+        <h2>How to do?</h2>
+        <p>Chant Hare Krishna, serve devotees, read Srimad Bhagavatam, and live a life centered on Krishna.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Instructions in pixel style -->
+  <div class="instructions">
+    ░█▀█░█▀█░█░░░█▀▀░█▀▀░█▄█<br>
+    ░█▀█░█░█░█░░░█▀▀░█▀▀░█░█<br>
+    ░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀<br><br>
+    Begin from the **bottom bubble**.<br>
+    Click each bubble to learn.<br>
+    Move your way **upward**.<br><br>
+    When you reach the top... 🌱<br>
+    A green tick will appear! ✔<br>
+    That means you're progressing!
+  </div>
+
+  <script>
+    function toggleCard(index) {
+      const allCards = document.querySelectorAll('.card');
+      const currentCard = document.getElementById(`card-${index}`);
+
+      allCards.forEach((card, i) => {
+        if (i === index) {
+          card.style.display = card.style.display === 'block' ? 'none' : 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // ✅ Show tick once user scrolls to top
+    window.addEventListener('scroll', () => {
+      const timelineTop = document.getElementById('timeline').getBoundingClientRect().top;
+      if (timelineTop <= 80) {
+        document.getElementById('tick').style.display = 'flex';
+      }
+    });
+  </script>
+
+  <div id="successPopup" class="success-popup">✅ You completed all 5 steps correctly! Explore more on other pages!🌟</div>
+
+<script>
+  const stepsCompleted = [false, false, false, false, false];
+  let currentStep = 0;
+
+  function toggleCard(index) {
+    const allCards = document.querySelectorAll('.card');
+    const currentCard = document.getElementById(`card-${index}`);
+
+    allCards.forEach((card, i) => {
+      if (i === index) {
+        card.style.display = card.style.display === 'block' ? 'none' : 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Validation logic for step order
+    if (index === currentStep) {
+      stepsCompleted[index] = true;
+      document.getElementById(`step-tick-${index}`).style.display = 'flex';
+      currentStep++;
+      if (stepsCompleted.every(Boolean)) {
+        document.getElementById('tick').style.display = 'flex';
+        document.getElementById('successPopup').style.display = 'block';
+      }
+    } else {
+      showWarning("⚠️ Please go step-by-step from bottom to top!");
+    }
+  }
+
+  function showWarning(message) {
+  const existing = document.querySelector('.warning');
+  if (existing) existing.remove();
+
+  const warn = document.createElement('div');
+  warn.className = 'warning';
+  warn.textContent = message;
+  document.body.appendChild(warn);
+
+  setTimeout(() => {
+    warn.remove();
+  }, 3000);
+}
+
+
+  // Prevent green tick from showing if not all steps are done
+  window.addEventListener('scroll', () => {
+    const timelineTop = document.getElementById('timeline').getBoundingClientRect().top;
+    if (timelineTop <= 80 && stepsCompleted.every(Boolean)) {
+      document.getElementById('tick').style.display = 'flex';
+    } else if (timelineTop <= 80) {
+      showWarning("❌ Finish all steps before reaching top!");
+    }
+  });
+</script>
+
+
+</body>
+</html>
