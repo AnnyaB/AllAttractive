@@ -3,16 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Spiritual Timeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
   <style>
+    @font-face {
+  font-family: 'Medodica';
+  src: url('fonts/medodica.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
     body {
-      font-family: sans-serif;
-      background: #f0f8ff;
-      margin: 0;
-      padding: 40px;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
+  font-family: 'Medodica', sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+   body {
+  font-family: 'Medodica', monospace;
+  font-size: 16px;
+  image-rendering: pixelated;
+}
+ 
 
     .timeline {
       position: relative;
@@ -108,18 +124,19 @@
     }
 
     .instructions {
-      font-family: 'Courier New', monospace;
-      font-size: 14px;
-      background: #ffffff;
-      border: 2px dashed #8ecae6;
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin-top: 40px;
-      text-align: center;
-      max-width: 320px;
-      color: #023047;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+  font-family: 'Medodica', monospace;
+  font-size: 14px;
+  background: #ffffff;
+  border: 2px dashed #8ecae6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+  max-width: 320px;
+  color: #023047;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
     .tick-container {
       position: relative;
@@ -236,10 +253,36 @@
     height: auto;
   }
 }
+body.dark-mode .bubble-container .card h2 {
+  color: white;
+}
+
+.pixel-text {
+  font-family: 'Medodica', monospace; /* Using your existing Medodica font */
+  font-size: 24px;
+  image-rendering: pixelated;
+  letter-spacing: 2px;
+  color: #023047;
+  font-weight: bold;
+  user-select: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
 
   </style>
 </head>
 <body>
+
+    <header>
+   
+    <nav>
+      <a href="index.html">← Back to Home</a>
+      <a href="time-and-space.html">Next Page</a>
+      <button id="toggleMode"> Toggle Dark Mode</button>
+    </nav>
+   
+  </header>
 
   <!-- ✅ Green tick shown at top -->
   <div class="tick-container" id="tick">
@@ -305,15 +348,14 @@
     </div>
 
   </section>
-
+  
   <!-- Instructions in pixel style -->
   <div class="instructions">
-    ░█▀█░█▀█░█░░░█▀▀░█▀▀░█▄█<br>
-    ░█▀█░█░█░█░░░█▀▀░█▀▀░█░█<br>
-    ░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀<br><br>
-    Begin from the **bottom bubble**.<br>
+   
+     <p class="pixel-text">Hare Krsna</p>
+    Begin from the bottom bubble.<br>
     Click each bubble to learn.<br>
-    Move your way **upward**.<br><br>
+    Move your way upward.<br><br>
     When you reach the top... 🌱<br>
     A green tick will appear! ✔<br>
     That means you're progressing!
@@ -399,7 +441,18 @@
     }
   });
 </script>
+<script>
+  // Select the instructions div
+  const instructions = document.querySelector('.instructions');
+  if (instructions) {
+    // Replace "bottom bubble" with bold text
+    instructions.innerHTML = instructions.innerHTML.replace(/bottom bubble/g, '<strong>bottom bubble</strong>');
+    // Replace "upward" with bold text
+    instructions.innerHTML = instructions.innerHTML.replace(/upward/g, '<strong>upward</strong>');
+  }
+</script>
 
 
+  <script src="app.js"></script>
 </body>
 </html>
