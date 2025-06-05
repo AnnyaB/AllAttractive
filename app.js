@@ -1,4 +1,4 @@
-console.log("Gaur Lila JS loaded");
+// app.js
 // Ensure the DOM is fully loaded before running scripts
 document.addEventListener('DOMContentLoaded', () => {
   const lilasContainer = document.getElementById('lilas');
@@ -275,4 +275,3 @@ widget.addEventListener('click', () => {
   }, 500);
   alert('You clicked to meet The Beautiful Lord!');
 });
-
