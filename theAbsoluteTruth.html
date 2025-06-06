@@ -69,10 +69,11 @@
       z-index: 1;
     }
 
-    .widget:hover {
-      transform: scale(1.1);
-      background-color: #ffffffee;
-    }
+    .widget {
+  will-change: transform;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 
     .widget span {
       text-align: center;
@@ -118,9 +119,10 @@
     }
 
     @keyframes glow {
-      0%, 100% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.3); }
-      50% { box-shadow: 0 0 80px rgba(255, 255, 255, 0.7); }
-    }
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
+}
+
 
     /* Positioning the widgets */
     .left-1 { left: 5%; top: 15%; }
@@ -198,7 +200,48 @@
     order: -1;
     margin-bottom: 20px;
   }
+#popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+#popupContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;         /* <-- enable scrolling if content is bigger */
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+}
+
+
+#popupContent img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+#popupClose {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+
+  
 
   </style>
 </head>
@@ -253,6 +296,14 @@
       <img src="Incarnations.jpg" alt="Hierarchy of Kṛṣṇa's Incarnations">
     </div>
   </div>
+  <!-- Popup Overlay for enlarged image -->
+<div id="popupOverlay" style="display:none;">
+  <div id="popupContent">
+    <span id="popupClose">&times;</span>
+    <img id="popupImage" src="" alt="Enlarged image">
+  </div>
+</div>
+
 
   <footer>
     <p data-tooltip="All glories to Sri Guru and Sri Gauranga! Chant Hare Krishna and be happy.">
@@ -274,6 +325,35 @@
     document.getElementById('toggleMode').addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
     });
+  </script>
+
+  <script>
+
+const centralImg = document.querySelector('.central-widget img');
+const popupOverlay = document.getElementById('popupOverlay');
+const popupImage = document.getElementById('popupImage');
+const popupClose = document.getElementById('popupClose');
+
+// Show popup on image click
+centralImg.addEventListener('click', () => {
+  popupImage.src = centralImg.src;
+  popupOverlay.style.display = 'flex';
+});
+
+// Close popup on clicking close button or outside image
+popupClose.addEventListener('click', () => {
+  popupOverlay.style.display = 'none';
+});
+
+popupOverlay.addEventListener('click', (e) => {
+  if (e.target === popupOverlay) {
+    popupOverlay.style.display = 'none';
+  }
+});
+
+
+
+
   </script>
 
 </body>
