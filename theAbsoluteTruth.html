@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>The Absolute Truth</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" href="style.css">
   <style>
     html, body {
       margin: 0;
@@ -69,9 +70,10 @@
     }
 
     .widget {
-      will-change: transform;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
+  will-change: transform;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 
     .widget span {
       text-align: center;
@@ -117,9 +119,10 @@
     }
 
     @keyframes glow {
-      0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
-      50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
-    }
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
+}
+
 
     /* Positioning the widgets */
     .left-1 { left: 5%; top: 15%; }
@@ -153,48 +156,7 @@
       background-color: #e0e0e0;
     }
 
-    /* Popup styles */
-    #popupOverlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    #popupContent {
-      position: relative;
-      max-width: 90vw;
-      max-height: 90vh;
-      overflow: auto;
-      box-shadow: 0 0 20px white;
-      border-radius: 8px;
-    }
-
-    #popupContent img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 8px;
-      display: block;
-    }
-
-    #popupClose {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      font-size: 2rem;
-      color: white;
-      cursor: pointer;
-      user-select: none;
-      font-weight: bold;
-    }
-
-    /* ====== MOBILE RESPONSIVENESS ENHANCEMENTS ====== */
+    /* Responsive design */
     @media (max-width: 768px) {
       .widget {
         width: 90px;
@@ -215,152 +177,198 @@
       button#toggleMode {
         margin-top: 10px;
       }
-      
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
+    }
 
-      .widget {
-        position: static;
-        margin: 15px auto;
-      }
-
-      .left-1, .left-2, .left-3,
-      .right-1, .right-2, .right-3 {
-        left: auto;
-        right: auto;
-        top: auto;
-      }
-
-      .central-widget {
-        order: -1;
-        margin-bottom: 20px;
-      }
-    }
-    
-    /* Ultra-Mobile Focus (≤480px) */
-    @media (max-width: 480px) {
-      /* Navigation adjustments */
-      nav {
-        padding: 8px 10px;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      
-      nav a {
-        margin-right: 5px;
-        font-size: 14px;
-      }
-      
-      button#toggleMode {
-        padding: 5px 8px;
-        font-size: 12px;
-        margin-top: 5px;
-      }
-      
-      /* Widget adjustments */
-      .widget {
-        width: 85px;
-        height: 85px;
-        margin: 12px;
-      }
-      
-      .widget span {
-        font-size: 11px;
-        padding: 8px;
-      }
-      
-      .widget-content {
-        width: 160px;
-        font-size: 12px;
-        padding: 8px;
-      }
-      
-      /* Central widget adjustments */
-      .central-widget {
-        width: 95%;
-        border-radius: 18px;
-      }
-      
-      .central-widget img {
-        border-radius: 18px;
-      }
-      
-      /* Container adjustments */
       .container {
-        padding: 1rem 0.5rem;
-      }
-      
-      /* Footer adjustments */
-      footer {
-        margin-top: 30px;
-        padding: 8px;
-        font-size: 12px;
-      }
-      
-      /* Popup adjustments */
-      #popupContent {
-        max-width: 95vw;
-        max-height: 95vh;
-      }
-      
-      #popupClose {
-        font-size: 1.8rem;
-        top: 3px;
-        right: 8px;
-      }
-    }
-    
-    /* Height adjustments for landscape mobiles */
-    @media (max-width: 850px) and (max-height: 450px) {
-      .container {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
-      
-      .widget {
-        width: 70px;
-        height: 70px;
-        margin: 8px;
-      }
-      
-      .widget span {
-        font-size: 10px;
-        padding: 5px;
-      }
-      
-      .central-widget {
-        max-width: 95%;
-      }
-    }
-    
-    /* Touch target sizing */
-    .widget {
-      min-width: 44px;
-      min-height: 44px;
-    }
-    
-    nav a, button#toggleMode {
-      min-height: 36px;
-      display: inline-flex;
-      align-items: center;
-    }
-    
-    /* Prevent horizontal overflow */
-    html, body {
-      max-width: 100vw;
-      overflow-x: hidden;
-    }
-    
-    /* Improve accessibility for dark mode toggle */
-    button#toggleMode:focus {
-      outline: 2px solid #80bdff;
-      outline-offset: 2px;
-    }
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widget {
+    position: static;
+    margin: 15px auto;
+  }
+
+  .left-1, .left-2, .left-3,
+  .right-1, .right-2, .right-3 {
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+
+  .central-widget {
+    order: -1;
+    margin-bottom: 20px;
+  }
+#popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#popupContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;         /* <-- enable scrolling if content is bigger */
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+}
+
+
+#popupContent img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+#popupClose {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+
+
+/* ====== MOBILE RESPONSIVENESS ENHANCEMENTS ====== */
+/* Ultra-Mobile Focus (≤480px) */
+@media (max-width: 480px) {
+  /* Navigation adjustments */
+  nav {
+    padding: 8px 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+  button#toggleMode {
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Widget adjustments */
+  .widget {
+    width: 85px;
+    height: 85px;
+    margin: 12px;
+  }
+  
+  .widget span {
+    font-size: 11px;
+    padding: 8px;
+  }
+  
+  .widget-content {
+    width: 160px;
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  /* Central widget adjustments */
+  .central-widget {
+    width: 95%;
+    border-radius: 18px;
+  }
+  
+  .central-widget img {
+    border-radius: 18px;
+  }
+  
+  /* Container adjustments */
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  
+  /* Footer adjustments */
+  footer {
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  /* Popup adjustments */
+  #popupContent {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+  
+  #popupClose {
+    font-size: 1.8rem;
+    top: 3px;
+    right: 8px;
+  }
+}
+
+/* Height adjustments for landscape mobiles */
+@media (max-width: 850px) and (max-height: 450px) {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .widget {
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+  }
+  
+  .widget span {
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  .central-widget {
+    max-width: 95%;
+  }
+}
+
+/* Touch target sizing */
+.widget {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+nav a, button#toggleMode {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Improve accessibility for dark mode toggle */
+button#toggleMode:focus {
+  outline: 2px solid #80bdff;
+  outline-offset: 2px;
+}
+  
+  
+
   </style>
 </head>
 <body>
+
   <header>
     <nav>
       <div>
@@ -372,6 +380,7 @@
   </header>
 
   <div class="container">
+
     <!-- Left side widgets -->
     <div class="widget left left-1" onclick="toggleContent(this)">
       <span>Brahman</span>
@@ -406,17 +415,17 @@
 
     <!-- Central rectangular image widget -->
     <div class="central-widget">
-      <img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hierarchy of Kṛṣṇa's Incarnations">
+      <img src="Incarnations.jpg" alt="Hierarchy of Kṛṣṇa's Incarnations">
     </div>
   </div>
-  
   <!-- Popup Overlay for enlarged image -->
-  <div id="popupOverlay" style="display:none;">
-    <div id="popupContent">
-      <span id="popupClose">&times;</span>
-      <img id="popupImage" src="" alt="Enlarged image">
-    </div>
+<div id="popupOverlay" style="display:none;">
+  <div id="popupContent">
+    <span id="popupClose">&times;</span>
+    <img id="popupImage" src="" alt="Enlarged image">
   </div>
+</div>
+
 
   <footer>
     <p data-tooltip="All glories to Sri Guru and Sri Gauranga! Chant Hare Krishna and be happy.">
@@ -438,29 +447,36 @@
     document.getElementById('toggleMode').addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
     });
-
-    // Image popup functionality
-    const centralImg = document.querySelector('.central-widget img');
-    const popupOverlay = document.getElementById('popupOverlay');
-    const popupImage = document.getElementById('popupImage');
-    const popupClose = document.getElementById('popupClose');
-
-    // Show popup on image click
-    centralImg.addEventListener('click', () => {
-      popupImage.src = centralImg.src;
-      popupOverlay.style.display = 'flex';
-    });
-
-    // Close popup on clicking close button or outside image
-    popupClose.addEventListener('click', () => {
-      popupOverlay.style.display = 'none';
-    });
-
-    popupOverlay.addEventListener('click', (e) => {
-      if (e.target === popupOverlay) {
-        popupOverlay.style.display = 'none';
-      }
-    });
   </script>
+
+  <script>
+
+const centralImg = document.querySelector('.central-widget img');
+const popupOverlay = document.getElementById('popupOverlay');
+const popupImage = document.getElementById('popupImage');
+const popupClose = document.getElementById('popupClose');
+
+// Show popup on image click
+centralImg.addEventListener('click', () => {
+  popupImage.src = centralImg.src;
+  popupOverlay.style.display = 'flex';
+});
+
+// Close popup on clicking close button or outside image
+popupClose.addEventListener('click', () => {
+  popupOverlay.style.display = 'none';
+});
+
+popupOverlay.addEventListener('click', (e) => {
+  if (e.target === popupOverlay) {
+    popupOverlay.style.display = 'none';
+  }
+});
+
+
+
+
+  </script>
+
 </body>
 </html>
