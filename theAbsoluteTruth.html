@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Absolute Truth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #dceefc, #f3f3f3);
+      overflow: auto;
+      transition: background 0.3s ease;
+    }
+
+    body.dark-mode {
+      background: #1a1a1a;
+      color: black;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: transparent;
+    }
+
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    button#toggleMode {
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    /* Bubble widgets */
+    .widget {
+      width: 120px;
+      height: 120px;
+      margin: 20px;
+      border-radius: 50%;
+      background-color: #ffffffcc;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+
+    .widget:hover {
+      transform: scale(1.1);
+      background-color: #ffffffee;
+    }
+
+    .widget span {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      color: black;
+    }
+
+    .widget-content {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-10px);
+      width: 220px;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      z-index: 10;
+      text-align: center;
+      color: black;
+    }
+
+    /* Central rectangular widget */
+    .central-widget {
+      width: 90%;
+      max-width: 1000px;
+      height: auto;
+      aspect-ratio: 10 / 7;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
+      animation: glow 6s ease-in-out infinite;
+      position: relative;
+      z-index: 0;
+    }
+
+    .central-widget img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.3); }
+      50% { box-shadow: 0 0 80px rgba(255, 255, 255, 0.7); }
+    }
+
+    /* Positioning the widgets */
+    .left-1 { left: 5%; top: 15%; }
+    .left-2 { left: 5%; top: 40%; }
+    .left-3 { left: 5%; top: 65%; }
+
+    .right-1 { right: 5%; top: 15%; }
+    .right-2 { right: 5%; top: 40%; }
+    .right-3 { right: 5%; top: 65%; }
+
+    .left { text-align: right; }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 10px;
+      font-size: 14px;
+      background: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    body.dark-mode .widget {
+      background-color: #cccccc;
+    }
+
+    body.dark-mode .widget span,
+    body.dark-mode .widget-content,
+    body.dark-mode footer {
+      color: black;
+      background-color: #e0e0e0;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .widget {
+        width: 90px;
+        height: 90px;
+        font-size: 12px;
+      }
+
+      .widget-content {
+        width: 180px;
+        font-size: 13px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      button#toggleMode {
+        margin-top: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div>
+        <a href="index.html">← Back to Home</a>
+        <a href="time-and-space.html">Next Page</a>
+      </div>
+      <button id="toggleMode">Toggle Dark Mode</button>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Left side widgets -->
+    <div class="widget left left-1" onclick="toggleContent(this)">
+      <span>Brahman</span>
+      <div class="widget-content">Effulgence of Kṛṣṇa – the impersonal aspect.</div>
+    </div>
+
+    <div class="widget left left-2" onclick="toggleContent(this)">
+      <span>Paramātmā</span>
+      <div class="widget-content">Kṛṣṇa as the Supersoul in every being.</div>
+    </div>
+
+    <div class="widget left left-3" onclick="toggleContent(this)">
+      <span>Bhagavān</span>
+      <div class="widget-content">The personal form – Śrī Kṛṣṇa, the Supreme.</div>
+    </div>
+
+    <!-- Right side widgets -->
+    <div class="widget right-1" onclick="toggleContent(this)">
+      <span>Mahā-Viṣṇu</span>
+      <div class="widget-content">Breathes out countless universes.</div>
+    </div>
+
+    <div class="widget right-2" onclick="toggleContent(this)">
+      <span>Garbhodakaśāyī</span>
+      <div class="widget-content">Lies on Garbhodaka Ocean in each universe.</div>
+    </div>
+
+    <div class="widget right-3" onclick="toggleContent(this)">
+      <span>Kṣīrodakaśāyī</span>
+      <div class="widget-content">Dwells as Paramātmā in every heart and atom.</div>
+    </div>
+
+    <!-- Central rectangular image widget -->
+    <div class="central-widget">
+      <img src="Incarnations.jpg" alt="Hierarchy of Kṛṣṇa's Incarnations">
+    </div>
+  </div>
+
+  <footer>
+    <p data-tooltip="All glories to Sri Guru and Sri Gauranga! Chant Hare Krishna and be happy.">
+      &copy; 2025 Krsna's Corner. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    function toggleContent(widget) {
+      const content = widget.querySelector('.widget-content');
+      const allContents = document.querySelectorAll('.widget-content');
+      allContents.forEach(c => {
+        if (c !== content) c.style.display = 'none';
+      });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Toggle dark mode
+    document.getElementById('toggleMode').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
