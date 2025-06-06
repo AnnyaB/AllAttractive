@@ -35,4 +35,6 @@ This work is inspired by my ongoing journey in **cosmological studies** and aims
 
 **More to come. Stay tuned.**
 
+**Issues to be fixed** 
+
 
