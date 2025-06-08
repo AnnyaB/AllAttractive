@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishori's Cuisine</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #4b2e2e;
+    }
+
+    header {
+      background-color: #f4e2d8;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #8b0000;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .slide {
+      flex: 0 0 80%;
+      scroll-snap-align: start;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .slide:hover {
+      transform: scale(1.02);
+    }
+
+    .slide img {
+      width: 85%;
+      border-radius: 8px;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .slide h2 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #5c1a1a;
+    }
+
+    .slide p {
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background-color: #f4e2d8;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #6b4c3b;
+    }
+
+    #categoryFilter {
+      display: block;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background-color: #fef4e5;
+      color: #5c1a1a;
+    }
+
+    @media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    padding: 1.5rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Slider adjustments */
+  .slider {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .slide {
+    flex: 0 0 90%;
+  }
+  
+  .slide img {
+    height: 250px;
+    width: 95%;
+  }
+  
+  .slide h2 {
+    font-size: 1.3rem;
+  }
+  
+  /* Filter adjustments */
+  #categoryFilter {
+    width: 90%;
+    max-width: 300px;
+    font-size: 0.95rem;
+  }
+  
+  /* Footer adjustments */
+  footer {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header adjustments */
+  header {
+    padding: 1rem 0.8rem;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  /* Slider adjustments */
+  .slider {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+  
+  .slide {
+    flex: 0 0 92%;
+    padding: 0.8rem;
+  }
+  
+  .slide img {
+    height: 200px;
+  }
+  
+  .slide h2 {
+    font-size: 1.2rem;
+  }
+  
+  .slide p {
+    font-size: 0.95rem;
+  }
+  
+  /* Filter adjustments */
+  #categoryFilter {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer adjustments */
+  footer {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Touch target optimization */
+.slide {
+  min-height: 450px; /* Ensure enough space for content */
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kishori's Cuisine: Kṛṣṇatarian Prasādam Recipes</h1>
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="sweet">Sweet</option>
+      <option value="savory">Savory</option>
+    </select>
+  </header>
+  <section class="slider" id="recipeSlider">
+    <!-- Recipe Slides Will Be Injected Here -->
+  </section>
+  <footer>
+    Offered with love to Śrī Kṛṣṇa ❤ | Kṛṣṇatarian Delight
+  </footer>
+
+  <script>
+    const recipes = [
+      {
+        title: "Sweet Rice (Kheer)",
+        image: "Vermicelli-Kheer.jpg",
+        description: "Boil rice in milk with sugar, cardamom, and nuts. Simmer till creamy. Cool and offer to Kṛṣṇa.",
+        category: "sweet"
+      },
+      {
+        title: "Sabji with Ghee Tadka",
+        image: "Arbi-Sabji.jpg",
+        description: "Steam vegetables, add ghee, mustard seeds, curry leaves, and turmeric. Mix and offer.",
+        category: "savory"
+      },
+      {
+        title: "Halav (Sooji Halwa)",
+        image: "Halwa.jpg",
+        description: "Roast semolina in ghee, add boiling water and sugar. Cook till thick. Offer warm.",
+        category: "sweet"
+      }
+    ];
+
+    const slider = document.getElementById('recipeSlider');
+    let direction = 1;
+    let autoSlideInterval;
+
+    function renderRecipes(filter = "all") {
+      slider.innerHTML = "";
+      const filtered = filter === "all" ? recipes : recipes.filter(r => r.category === filter);
+      filtered.forEach(recipe => {
+        const slide = document.createElement('div');
+        slide.className = 'slide';
+        slide.innerHTML = `
+          <img src="${recipe.image}" alt="${recipe.title}">
+          <h2>${recipe.title}</h2>
+          <p>${recipe.description}</p>
+        `;
+        slider.appendChild(slide);
+      });
+    }
+
+    function startAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(() => {
+        const scrollAmount = 300 * direction;
+        const maxScroll = slider.scrollWidth - slider.clientWidth;
+        if ((direction > 0 && slider.scrollLeft + scrollAmount >= maxScroll) ||
+            (direction < 0 && slider.scrollLeft + scrollAmount <= 0)) {
+          direction *= -1; // reverse direction
+        }
+        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }, 5000);
+    }
+
+    slider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    slider.addEventListener('mouseleave', startAutoSlide);
+
+    renderRecipes();
+    startAutoSlide();
+
+    document.getElementById("categoryFilter").addEventListener("change", function () {
+      renderRecipes(this.value);
+    });
+  </script>
+
+  <script>
+// Mobile touch swipe functionality
+let touchStartX = 0;
+let touchEndX = 0;
+
+slider.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+slider.addEventListener('touchend', e => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const swipeThreshold = 50; // Minimum swipe distance in pixels
+  
+  if (touchStartX - touchEndX > swipeThreshold) {
+    // Swipe left
+    slider.scrollBy({ left: 300, behavior: 'smooth' });
+  } else if (touchEndX - touchStartX > swipeThreshold) {
+    // Swipe right
+    slider.scrollBy({ left: -300, behavior: 'smooth' });
+  }
+}
+
+// Adjust auto-slide interval for mobile
+function startAutoSlide() {
+  clearInterval(autoSlideInterval);
+  
+  // Use a longer interval on mobile to prevent distraction
+  const interval = window.innerWidth <= 768 ? 7000 : 5000;
+  
+  autoSlideInterval = setInterval(() => {
+    const scrollAmount = 300 * direction;
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    
+    if ((direction > 0 && slider.scrollLeft + scrollAmount >= maxScroll) ||
+        (direction < 0 && slider.scrollLeft + scrollAmount <= 0)) {
+      direction *= -1; // reverse direction
+    }
+    
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }, interval);
+}
+
+// Reinitialize on resize to handle orientation changes
+window.addEventListener('resize', () => {
+  startAutoSlide();
+});
+
+// Initialize with correct interval
+startAutoSlide();
+</script>
+
+
+</body>
+</html>
