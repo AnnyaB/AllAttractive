@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kishori's Cuisine</title>
+  <link rel="stylesheet" href="style.css" /> 
   <style>
     body {
       margin: 0;
@@ -183,11 +184,24 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.recipe-description {
+  color: black !important;
+}
+
   </style>
 </head>
 <body>
   <header>
     <h1>Kishori's Cuisine: Kṛṣṇatarian Prasādam Recipes</h1>
+
+    <nav>
+      <a href="index.html">Home</a> 
+      <a href="time-and-space.html">Next Page</a>
+      <a href="theAbsoluteTruth.html">Previous Page</a>
+      <button id="toggleMode"> Toggle Dark Mode</button>
+    </nav>
+
     <select id="categoryFilter">
       <option value="all">All Categories</option>
       <option value="sweet">Sweet</option>
@@ -321,6 +335,39 @@ window.addEventListener('resize', () => {
 startAutoSlide();
 </script>
 
+<script>
+  const toggleButton = document.getElementById('toggleMode');
+  let darkMode = false;
 
+  toggleButton.addEventListener('click', () => {
+    darkMode = !darkMode;
+
+    if (darkMode) {
+      // Dark mode on
+      document.body.style.backgroundColor = '#1e1e1e';
+      document.body.style.color = '#ffffff';
+
+      // Keep slide containers white
+      document.querySelectorAll('.slide').forEach(slide => {
+        slide.style.backgroundColor = '#ffffff';
+        const p = slide.querySelector('p');
+        if (p) p.style.color = 'black';
+      });
+    } else {
+      // Light mode on
+      document.body.style.backgroundColor = '#fff8f0';
+      document.body.style.color = '#4b2e2e';
+
+      document.querySelectorAll('.slide').forEach(slide => {
+        slide.style.backgroundColor = '#ffffff'; // default card color
+        const p = slide.querySelector('p');
+        if (p) p.style.color = '#4b2e2e'; // reset to match theme
+      });
+    }
+  });
+</script>
+
+
+ <script src="app.js"></script> 
 </body>
 </html>
