@@ -296,6 +296,33 @@
     "image": "images/Description_of_Rasa_Dance.jpg"
   },
   {
+    "title": "Vidyādhara Liberated and the Demon Śaṅkhacūḍa Killed",
+    "description": "Krishna liberates the vidyadhara and kills the demon Sankhasura, showcasing His divine protection.",
+    "canto": 10,
+    "chapter": 33,
+    "verses": "1–28",
+    "reference": "Srimad Bhagavatam 10.33.1–28",
+    "image": "images/Vidyadhara_Liberated_and_Sankhasura_Killed.jpg"
+  },
+  {
+    "title": "The Gopīs’ Feelings of Separation",
+    "description": "The gopis express their deep feelings of separation from Krishna, revealing their intense devotional love.",
+    "canto": 10,
+    "chapter": 34,
+    "verses": "1–22",
+    "reference": "Srimad Bhagavatam 10.34.1–22",
+    "image": "images/Gopis_Feelings_of_Separation.jpg"
+  },
+  {
+    "title": "Kaṁsa Sends Akrūra for Kṛṣṇa",
+    "description": "Kamsa sends Akrura to bring Krishna to Mathura, intending to trap Him for his evil plans.",
+    "canto": 10,
+    "chapter": 35,
+    "verses": "1–30",
+    "reference": "Srimad Bhagavatam 10.35.1–30",
+    "image": "images/Kamsa_Sends_Akrura.jpg"
+  },
+  {
     "title": "Aristasura Vadh",
     "description": "Krishna kills the bull demon Aristasura who attacks the village.",
     "canto": 10,
@@ -321,6 +348,15 @@
     "verses": "21–34",
     "reference": "Srimad Bhagavatam 10.37.21–34",
     "image": "images/Vyomasura_Vadh_Leela.jpg"
+  },
+{
+    "title": "Akrūra’s Arrival in Vṛndāvana",
+    "description": "Akrura arrives in Vrindavana, witnessing Krishna's divine pastimes and glory.",
+    "canto": 10,
+    "chapter": 37,
+    "verses": "1–26",
+    "reference": "Srimad Bhagavatam 10.37.1–26",
+    "image": "images/Akrura_Arrival_in_Vrindavana.jpg"
   },
   {
     "title": "Kṛṣṇa Enters Mathurā",
@@ -395,24 +431,6 @@
     "image": "images/Prayers_by_Indra.jpg"
   },
   {
-    "title": "Vidyādhara Liberated and the Demon Śaṅkhacūḍa Killed",
-    "description": "Krishna liberates the vidyadhara and kills the demon Sankhasura, showcasing His divine protection.",
-    "canto": 10,
-    "chapter": 33,
-    "verses": "1–28",
-    "reference": "Srimad Bhagavatam 10.33.1–28",
-    "image": "images/Vidyadhara_Liberated_and_Sankhasura_Killed.jpg"
-  },
-  {
-    "title": "The Gopīs’ Feelings of Separation",
-    "description": "The gopis express their deep feelings of separation from Krishna, revealing their intense devotional love.",
-    "canto": 10,
-    "chapter": 34,
-    "verses": "1–22",
-    "reference": "Srimad Bhagavatam 10.34.1–22",
-    "image": "images/Gopis_Feelings_of_Separation.jpg"
-  },
-  {
     "title": "Kaṁsa Sends Akrūra for Kṛṣṇa",
     "description": "Kamsa sends Akrura to bring Krishna to Mathura, intending to trap Him for his evil plans.",
     "canto": 10,
@@ -420,15 +438,6 @@
     "verses": "1–30",
     "reference": "Srimad Bhagavatam 10.35.1–30",
     "image": "images/Kamsa_Sends_Akrura.jpg"
-  },
-  {
-    "title": "Akrūra’s Arrival in Vṛndāvana",
-    "description": "Akrura arrives in Vrindavana, witnessing Krishna's divine pastimes and glory.",
-    "canto": 10,
-    "chapter": 37,
-    "verses": "1–26",
-    "reference": "Srimad Bhagavatam 10.37.1–26",
-    "image": "images/Akrura_Arrival_in_Vrindavana.jpg"
   },
   {
     "title": "Akrūra’s Return Journey and His Vision of Viṣṇuloka Within the Yamunā River",
